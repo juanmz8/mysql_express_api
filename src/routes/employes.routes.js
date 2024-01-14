@@ -8,13 +8,13 @@ import { deleteEmployees } from "../controllers/employees.controller.js";
 
 const router = Router();
 
-router.get("/employees", getEmployees);
-router.get("/employee/:id", getEmployee);
+router.get("https://mysqlexpressapi-production.up.railway.app/api//employees", getEmployees);
+router.get("https://mysqlexpressapi-production.up.railway.app/api/employee/:id", getEmployee);
 
-router.post("/employees", createEmployees);
+router.post("/https://mysqlexpressapi-production.up.railway.app/api/employees", createEmployees);
 
-router.patch("/employees/:id", updateEmployees);
+router.patch("https://mysqlexpressapi-production.up.railway.app/api//employees/:id", updateEmployees);
 
-router.delete("/employees/:id", deleteEmployees);
+router.delete("https://mysqlexpressapi-production.up.railway.app/api//employees/:id", deleteEmployees);
 
 export default router;

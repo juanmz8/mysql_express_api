@@ -12,7 +12,7 @@ export const getEmployee = async (req, res) => {
             res.json(employee[0]);
         }
     } catch (error) {
-        res.status(500).send("Error in the Server");
+        res.status(500).send("Error in the Server in method get");
     }
 };
 
@@ -23,7 +23,7 @@ export const getEmployees = async (req, res) => {
         );
         res.send(employees);
     } catch (error) {
-        res.status(500).send("Error in the Server");
+        res.status(500).send("Error in the Server in method get general");
     }
 };
 
@@ -41,7 +41,7 @@ export const createEmployees = async (req, res) => {
             salary,
         });
     } catch (error) {
-        res.status(500).send("Error in the Server");
+        res.status(500).send("Error in the Server in method post");
     }
 };
 
@@ -64,7 +64,7 @@ export const updateEmployees = async (req, res) => {
             res.send(employeeUpdate[0]);
         }
     } catch (error) {
-        res.status(500).send("Error in the Server");
+        res.status(500).send("Error in the Server in method patch");
     }
 };
 
@@ -82,7 +82,7 @@ export const deleteEmployees = async (req, res) => {
             });
         }
     } catch (error) {
-        res.status(500).send("Error in the Server");
+        res.status(500).send("Error in the Server in method delete");
     }
 };
 

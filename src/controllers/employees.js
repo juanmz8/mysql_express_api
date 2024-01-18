@@ -1,4 +1,4 @@
-import { pool } from "../db.js";
+import { pool } from "../db-conection.js";
 
 export const getEmployee = async (req, res) => {
     try {
@@ -85,17 +85,3 @@ export const deleteEmployees = async (req, res) => {
         res.status(500).send("Error in the Server in method delete");
     }
 };
-
-function A() {
-    function B() {
-        function C() {
-            function D() {
-                function E() {
-                    function F() {
-
-                    }
-                }
-            }
-        }
-    }
-}
